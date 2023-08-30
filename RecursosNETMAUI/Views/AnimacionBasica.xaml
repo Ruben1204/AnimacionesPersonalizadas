@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="RecursosNETMAUI.Views.AnimacionBasica"
+             Title="AnimacionBasica">
+    <VerticalStackLayout Spacing="20"
+                         Margin="20"
+                         HorizontalOptions="Center"
+                         x:Name="verticalStackLayout">
+
+        <Image x:Name="imagen"
+               Source="dotnet_bot.png"
+               WidthRequest="60"/>
+
+        <HorizontalStackLayout>
+            <Button Clicked="Button_Clicked"
+                    Text="Animar_Der"
+                    WidthRequest="120"/>
+            <Button Clicked="Button_Clicked1"
+                    Text="Animar_Izq"
+                    WidthRequest="120"/>
+            <Button Clicked="Button_Clicked2"
+                    Text="RotarEjeX"
+                    WidthRequest="120"/>
+            <Button Clicked="Button_Clicked3"
+                    Text="RotarEjeY"
+                    WidthRequest="120"/>
+            <Button Clicked="Button_Clicked4"
+                    Text="Animar-IzqRel"
+                    WidthRequest="120"/>
+        </HorizontalStackLayout>
+
+        <Image x:Name="imagen1"
+            Source="dotnet_bot.png"
+            WidthRequest="60"/>
+
+        <HorizontalStackLayout>
+
+            <Button Clicked="Button_Clicked5"
+                 Text="Scalar"
+                 WidthRequest="120"/>
+            <Button Clicked="Button_Clicked6"
+                 Text="EscalarEnX"
+                 WidthRequest="120"/>
+            <Button Clicked="Button_Clicked7"
+                 Text="EscalarEnY"
+                 WidthRequest="120"/>
+            <Button    Clicked="Button_Clicked8"
+                 Text="EscalarRel"
+                 WidthRequest="120"/>
+            <Button    Clicked="Button_Clicked9"
+                       Text="Opacidad"
+                       WidthRequest="120"/>
+
+        </HorizontalStackLayout>
+
+        <Image x:Name="imagen2" 
+               Source="dotnet_bot.png"
+               WidthRequest="60"/>
+
+        <HorizontalStackLayout>
+            <Button Clicked="Button_Clicked10"
+                    Text="AnclajeYRotación"
+                    WidthRequest="150"/>
+            <Button Clicked="Button_Clicked11"
+                    Text="Traslado"
+                     WidthRequest="150"/>
+            <Button Clicked="Button_Clicked12"
+                    Text="AnimCompuesta"
+                    WidthRequest="150"/>
+        </HorizontalStackLayout>
+
+        <HorizontalStackLayout>
+
+            <VerticalStackLayout>
+
+                <Image x:Name="imagen3" 
+                Source="dotnet_bot.png"
+                WidthRequest="60"/>
+
+                <Button Clicked="Button_Clicked13"
+                 Text="AnimSimultWhenAny"
+                 WidthRequest="180"/>
+
+            </VerticalStackLayout>
+
+            <VerticalStackLayout>
+
+                <Image x:Name="imagen4" 
+                Source="dotnet_bot.png"
+                WidthRequest="60"/>
+
+                <Button Clicked="Button_Clicked14"
+                 Text="AnimSimultWhenAll"
+                 WidthRequest="180"/>
+                <Button Clicked="Button_Clicked15"
+                 Text="CancelarAnimación"
+                 WidthRequest="180"
+                 BackgroundColor="Red"/>
+
+            </VerticalStackLayout>
+            
+            <VerticalStackLayout>
+
+                <Image x:Name="imagen5" 
+                       Source="dotnet_bot.png"
+                       WidthRequest="60"/>
+                <HorizontalStackLayout>
+                    
+                    <Button Clicked="Button_Clicked16"
+                            Text="MetodoAceleración"
+                            WidthRequest="180"
+                            BackgroundColor="Green"/>
+                    <Button Clicked="Button_Clicked17"
+                            Text="FuncionAceleración"
+                            WidthRequest="180"
+                            BackgroundColor="Green"/>
+                    <Button Clicked="Button_Clicked18"
+                            Text="AceleraciónConstructor"
+                            WidthRequest="180"
+                            BackgroundColor="Green"/>
+                </HorizontalStackLayout>
+            </VerticalStackLayout>
+
+        </HorizontalStackLayout>
+
+       
+
+
+    </VerticalStackLayout>
+</ContentPage>

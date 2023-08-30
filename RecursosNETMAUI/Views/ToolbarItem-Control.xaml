@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="RecursosNETMAUI.Views.ToolbarItem_Control"
+             Title="Control-ToolbarItem">
+    
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Ajustes"
+                     IconImageSource="dotnet_bot.png"
+                     Clicked="ToolbarItem_Clicked"
+                     Order="Primary"/>
+        <ToolbarItem Text="Ayuda"
+                     Clicked="ToolbarItem_Clicked"
+                     Order="Secondary"/>
+        <ToolbarItem Text="Acerca de"
+                     Clicked="ToolbarItem_Clicked"
+                     Order="Secondary"/>
+        <ToolbarItem Text="Salir"                     
+                     Clicked="ToolbarItem_Clicked"
+                     Order="Secondary"/>
+    </ContentPage.ToolbarItems>
+    
+    
+    <VerticalStackLayout>
+        <Label 
+            Text="Bienvenido a mi canal Suscribete!"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center"
+            x:Name="etiquetaMensaje"/>
+    </VerticalStackLayout>
+</ContentPage>

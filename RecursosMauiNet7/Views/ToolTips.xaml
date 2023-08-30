@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="RecursosMauiNet7.Views.ToolTips"
+             Title="ToolTips">
+    <VerticalStackLayout BackgroundColor="LightGray">
+        <StackLayout Padding="20"
+                    Spacing="10"
+                    BackgroundColor="White"
+                    WidthRequest="600"
+                    Margin="100"
+                    ToolTipProperties.Text="Formulario de Sesión">
+
+            <Label Text="Usuario"/>
+            <Entry WidthRequest="400"
+                   Placeholder="Ingrese Correo"
+                   ToolTipProperties.Text="Recuerde que solo puede usar cuentas de Microsoft"/>
+            <Label Text="Contraseña"/>
+            <Entry WidthRequest="400"
+                   Placeholder="Ingrese su Contraseña"
+                   ToolTipProperties.Text="Solo tiene 3 oportunidades de equivocarse"/>
+            <Button Text="Iniciar Sesión"
+                    WidthRequest="400"
+                    ToolTipProperties.Text="Valide que los datos esn bien por favor &#x0a; Y posteriormente de click."/>
+        </StackLayout>
+    </VerticalStackLayout>
+</ContentPage>

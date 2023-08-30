@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="RecursosMauiNet7.Views.AnimacionPersonalizada"
+             Title="AnimacionPersonalizada">
+    <VerticalStackLayout Margin="0,50,0,0">
+
+        <VerticalStackLayout HorizontalOptions="Center"
+                             Spacing="20">
+
+            <Label 
+                Text="Animación Personalizada!"
+                VerticalOptions="Center" 
+                HorizontalOptions="Center"
+                FontSize="24"
+                FontAttributes="Bold"
+                x:Name="label1"/>
+
+            <HorizontalStackLayout HorizontalOptions="Center" Spacing="20">
+
+                <Image x:Name="imagenPrueba"
+                       Source="dotnet_bot.png"
+                       WidthRequest="80"/>
+
+                <Image x:Name="imagenPrueba1"
+                       Source="dotnet_bot.png"
+                       WidthRequest="80"/>
+                <BoxView x:Name="boxView"
+                         WidthRequest="100"
+                         HeightRequest="100"/>
+                
+            </HorizontalStackLayout>
+            <HorizontalStackLayout>
+                <Button Text="Animar"
+                        Clicked="Button_Clicked"
+                        WidthRequest="120"/>
+                <Button Text="AnimacionesSecundarias"
+                        Clicked="Button_Clicked1"
+                        WidthRequest="200"
+                        x:Name="Btn2"/>
+                <Button Text="AnimarBtn"
+                        Clicked="Button_Clicked2"
+                        WidthRequest="120"
+                        x:Name="Btn3"/>
+                <Button Text="Animar"
+                        Clicked="Button_Clicked3"
+                        WidthRequest="120"
+                        x:Name="Btn4"/>
+                <Button Text="CancelarAnimación"
+                        x:Name="btnCancel"
+                        WidthRequest="180"
+                        BackgroundColor="Red"
+                        Clicked="btnCancel_Clicked"/>
+            </HorizontalStackLayout>
+            
+        </VerticalStackLayout>
+       
+    </VerticalStackLayout>
+</ContentPage>

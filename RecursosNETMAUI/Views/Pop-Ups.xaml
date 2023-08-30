@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="RecursosNETMAUI.Views.Pop_Ups"
+             Title="Pop_Ups">
+    <VerticalStackLayout>
+        <Label Text="¡Tutorial Como Implementar Ventanas Emergentes!"
+               VerticalOptions="Center"
+               HorizontalOptions="Center"
+               Margin="0,50,0,0"
+               FontAttributes="Bold"/>
+
+        <Label x:Name="lblRespuesta"
+               TextColor="Red"
+               HorizontalOptions="Center"
+               HorizontalTextAlignment="Center"/>
+
+        <Button Text="Mostrar Ventana Emergente DisplayAlert"
+                HorizontalOptions="Center"
+                WidthRequest="300"
+                Clicked="Button_Clicked"
+                Margin="0,100,0,0"/>
+        <Button Text="Mostrar Hoja de Acción DisplayActionSheet"
+                HorizontalOptions="Center"
+                WidthRequest="300"
+                Clicked="Button_Clicked_1"
+                Margin="0,10,0,0"/>
+        <Button Text="Ventana de Ingreso DisplayPromptAsync"
+                HorizontalOptions="Center"
+                WidthRequest="300"
+                Clicked="Button_Clicked_2"
+                Margin="0,10,0,0"/>
+        <Button Text="Abrir Pagina de Forma Modal"
+                HorizontalOptions="Center"
+                WidthRequest="300"
+                Clicked="Button_Clicked_3"
+                Margin="0,10,0,0"/>
+
+    </VerticalStackLayout>
+</ContentPage>

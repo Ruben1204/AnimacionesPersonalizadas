@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="RecursosNETMAUI.Views.Fuentes_Fonts"
+             Title="Fuentes_Fonts">
+    
+    <ScrollView>
+        <VerticalStackLayout
+            Spacing="25"
+            Padding="30,0"
+            VerticalOptions="Center">
+
+            <Image
+                Source="dotnet_bot.png"
+                SemanticProperties.Description="Cute dot net bot waving hi to you!"
+                HeightRequest="200"
+                HorizontalOptions="Center" />
+
+            <Label
+                Text="Hello, World!"
+                SemanticProperties.HeadingLevel="Level1"
+                FontSize="{OnPlatform iOS=20, Android=20, WinUI=50}"
+                HorizontalOptions="Center"
+                FontAttributes="Italic"
+                FontAutoScalingEnabled="True">
+
+                <Label.FontFamily>
+                    <OnPlatform x:TypeArguments="x:String">
+                        <On Platform="iOS" Value="Lobster"/>
+                        <On Platform="Android" Value="Handjet-Regular"/>
+                        <On Platform="WinUI" Value="BoldHandjet"/>
+                    </OnPlatform>
+                </Label.FontFamily>
+            </Label>
+
+            <Label
+                Text="Welcome to .NET Multi-platform App UI"
+                SemanticProperties.HeadingLevel="Level2"
+                SemanticProperties.Description="Welcome to dot net Multi platform App U I"
+                FontSize="18"
+                HorizontalOptions="Center"
+                FontFamily="Lobster"
+                FontAttributes="Italic,Bold"/>
+
+            <Button
+                x:Name="CounterBtn"
+                Text="Click me"
+                SemanticProperties.Hint="Counts the number of times you click"
+                Clicked="OnCounterClicked"
+                HorizontalOptions="Center" />
+
+            <Image BackgroundColor="#d1d1d1"
+                   HeightRequest="50"
+                   WidthRequest="250">
+                <Image.Source>
+                    <FontImageSource Glyph="&#xf30c;"
+                                     FontFamily="icon"
+                                     Size="44"
+                                     Color="Green"/>
+                </Image.Source>
+            </Image>
+
+        </VerticalStackLayout>
+    </ScrollView>
+    
+</ContentPage>

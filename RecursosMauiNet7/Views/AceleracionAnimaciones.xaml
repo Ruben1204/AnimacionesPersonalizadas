@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="RecursosMauiNet7.Views.AceleracionAnimaciones"
+             Title="AceleracionAnimaciones">
+    <VerticalStackLayout Spacing="20" Margin="0,40,0,0">
+        <VerticalStackLayout HorizontalOptions="Center">
+        <Label 
+            Text="Aceleración de Animaciones!"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+            <Image x:Name="imagenPrueba"
+                   Source="dotnet_bot.png"
+                   WidthRequest="80"/>
+        </VerticalStackLayout>
+
+        <HorizontalStackLayout HorizontalOptions="Center">
+            <Button Text="BounceIn"
+                    WidthRequest="120"
+                    Clicked="Button_Clicked"/>
+            <Button Text=" BounceOut"
+                    WidthRequest="120"
+                    Clicked="Button_Clicked1"/>
+            <Button Text="CubicIn"
+                    WidthRequest="120"
+                    Clicked="Button_Clicked2"/>
+            <Button Text="CubicInOut"
+                    WidthRequest="120"
+                    Clicked="Button_Clicked3"/>
+        </HorizontalStackLayout>
+        
+        <HorizontalStackLayout HorizontalOptions="Center">
+            <Button Text=" CubicOut"
+            WidthRequest="120"
+            Clicked="Button_Clicked4"/>
+            <Button Text="Linear"
+            WidthRequest="120"
+            Clicked="Button_Clicked5"/>
+            <Button Text="SinIn"
+            WidthRequest="120"
+            Clicked="Button_Clicked6"/>
+            <Button Text="SinInOut"
+            WidthRequest="120"
+            Clicked="Button_Clicked7"/>
+        </HorizontalStackLayout>
+
+        <HorizontalStackLayout HorizontalOptions="Center">
+            <Button Text="SinOut"
+                    WidthRequest="120"
+                    Clicked="Button_Clicked8"/>
+            <Button Text="SpringIn"
+                    WidthRequest="120"
+                    Clicked="Button_Clicked9"/>
+            <Button Text="SpringOut"
+                    WidthRequest="120"
+                    Clicked="Button_Clicked10"/>
+        </HorizontalStackLayout>
+        <!--Funciones de aceleración personalizadas-->
+        <HorizontalStackLayout HorizontalOptions="Center">
+            <Button Text="Metodo"
+                    WidthRequest="120"
+                    Clicked="Button_Clicked11"
+                    BackgroundColor="Green"/>
+            <Button Text="Funcion"
+                    WidthRequest="120"
+                    Clicked="Button_Clicked12"
+                    BackgroundColor="Green"/>
+            <Button Text="Constructor"
+                    WidthRequest="120"
+                    Clicked="Button_Clicked13"
+                    BackgroundColor="Green"/>
+        </HorizontalStackLayout>
+    </VerticalStackLayout>
+</ContentPage>
